@@ -1,4 +1,21 @@
-.container {
+body {
+    background-color: #f4edce;
+}
+
+h1, h2, h3, h4, h5, h6 {   
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.etchasketch {
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
@@ -7,11 +24,42 @@
     height: 500px;
 }
 
+.right-column {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
 .square {
     border: 1px solid black;
     box-sizing: border-box;
 }
 
-.hovered-square {
-    background-color: palevioletred;
+.title {
+    text-align: left;
+    max-width: 40%;
+    margin: auto;
+    font-size: 4vw;
+}
+
+/* .hovered-square {
+    background-color: rgba(216, 112, 147);
+}
+
+.hovered-square-opacity {
+    background-color: rgba(216, 112, 147, 0.1);
+} */
+
+button {
+    background-color: #764838;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.swatch {
+    height: 20px;
+    width: 50%;
+    border: 1px solid black;
+    margin-bottom: 5px;
 }
